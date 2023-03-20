@@ -6,10 +6,71 @@ body {
   margin: 0 auto;
 }
 
+.mainPage {
+  background-color: #f1f5f9;
+}
+
+.container {
+  width: 95vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.container h1 {
+  font-size: 1.75vw;
+  font-weight: medium;
+  letter-spacing: -0.05vw;
+  margin: 0;
+  color: #475569;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.superscript {
+  font-size: 1vw;
+  vertical-align: super;
+}
+
+.introCard {
+  background-color: #cbd5e1;
+  padding: 2vh 2vw;
+  border-radius: 0.75vw;
+  filter: drop-shadow(0 0 5vw rgb(0 0 0 / 10%));
+  user-select: none;
+  cursor: default;
+}
+
+.startButton {
+  border: 0.15vw solid #475569;
+  padding: 0.5vw 1vh;
+  border-radius: 0.5vw;
+  text-decoration: none;
+  color: #475569;
+  font-size: 1vw;
+  font-weight: medium;
+  transition: 200ms ease-in-out all;
+  margin-top: 1vh;
+  cursor: pointer;
+}
+
+.startButton:hover {
+  background-color: #475569;
+  color: #cbd5e1;
+  transition: 200ms ease-in-out all;
 }
 
 h1 {
