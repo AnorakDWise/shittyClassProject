@@ -15,54 +15,150 @@
     <title>Quiz</title>
   </head>
   <body id="quizPage">
-    <h1>Quiz de Sciences Informatiques : Niveau 1° général</h1>
+    <section class="endScreen">
+      <div id="end" class="panel">
+        <button onclick="closeButton()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 30 30"
+          >
+            <path
+              d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M19.707,18.293 c0.391,0.391,0.391,1.023,0,1.414C19.512,19.902,19.256,20,19,20s-0.512-0.098-0.707-0.293L15,16.414l-3.293,3.293 C11.512,19.902,11.256,20,11,20s-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L13.586,15l-3.293-3.293 c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0L15,13.586l3.293-3.293c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414 L16.414,15L19.707,18.293z"
+            ></path>
+          </svg>
+        </button>
+        <h1 id="appreciation"></h1>
+        <h2 id="nombre_justes"></h2>
+      </div>
+    </section>
+    <h1>
+      Quiz de Sciences Informatiques : Niveau 1<span class="superscript"
+        >ère</span
+      >
+      général
+    </h1>
     <!-- le formulaire -->
     <form name="quiz" class="formContainer">
-      <p>Comment s'appelle le code alphabétique relié au code binaire ?</p>
-      <input id="questionA" /><br />
+      <div class="literalQuestion">
+        <label
+          >Comment s'appelle le code alphabétique relié au code binaire ?</label
+        >
+        <input id="questionA" placeholder="Tapez votre réponse ici..." />
+      </div>
 
-      <p>Quels composants sont obligatoires dans un ordinateur ?</p>
-      <input name="questionB" type="checkbox" />La RAM<br />
-      <input name="questionB" type="checkbox" />Le processeur<br />
-      <input name="questionB" type="checkbox" />Le lecteur CD<br />
-      <input name="questionB" type="checkbox" />La carte mère<br /><br />
+      <div class="choiceQuestion">
+        <label>Quels composants sont obligatoires dans un ordinateur ?</label>
+        <div class="checkbox">
+          <input name="questionB" type="checkbox" />La RAM
+        </div>
+        <div class="checkbox">
+          <input name="questionB" type="checkbox" />Le processeur
+        </div>
+        <div class="checkbox">
+          <input name="questionB" type="checkbox" />Le lecteur CD
+        </div>
+        <div class="checkbox">
+          <input name="questionB" type="checkbox" />La carte mère
+        </div>
+      </div>
 
-      <p>
-        Comment s'appelle le langage de codage pour coder des sites internet?
-      </p>
-      <input id="questionC" /><br />
+      <div class="literalQuestion">
+        <label>
+          Comment s'appelle le langage de codage pour coder des sites internet?
+        </label>
+        <input id="questionC" placeholder="Tapez votre réponse ici..." />
+      </div>
 
-      <p>Quels composants sont obligatoires dans un ordinateur ?</p>
-      <input name="questionD" type="checkbox" />Ruby<br />
-      <input name="questionD" type="checkbox" />Diamant<br />
-      <input name="questionD" type="checkbox" />C<br />
-      <input name="questionD" type="checkbox" />C--<br />
+      <div class="choiceQuestion">
+        <label>Lesquels sont / l'un est un langage de programmation ? </label>
+        <div class="checkbox">
+          <input name="questionD" type="checkbox" />Ruby
+        </div>
+        <div class="checkbox">
+          <input name="questionD" type="checkbox" />Diamant
+        </div>
+        <div class="checkbox"><input name="questionD" type="checkbox" />C</div>
+        <div class="checkbox">
+          <input name="questionD" type="checkbox" />C--
+        </div>
+      </div>
 
-      <p>Quels sont les chemins que l'on peut utiliser dans un répertoire ?</p>
-      <input name="question5" type="checkbox" />Chemin complet<br />
-      <input name="question5" type="checkbox" />Chemin relatif<br />
-      <input name="question5" type="checkbox" />Chemin absolu<br />
-      <input name="question5" type="checkbox" />Chemin semi-relatif<br />
+      <div class="choiceQuestion">
+        <label>
+          Quels sont les chemins que l'on peut utiliser dans un répertoire ?
+        </label>
+        <div class="checkbox">
+          <input name="question5" type="checkbox" />Chemin complet
+        </div>
+        <div class="checkbox">
+          <input name="question5" type="checkbox" />Chemin relatif
+        </div>
+        <div class="checkbox">
+          <input name="question5" type="checkbox" />Chemin absolu
+        </div>
+        <div class="checkbox">
+          <input name="question5" type="checkbox" />Chemin semi-relatif
+        </div>
+      </div>
 
-      <p>
-        Quel type de logiciel permet à tout utilisateur de l'utiliser, de
-        l'étudier, de le modifier et de le redistribuer sans restriction ?
-      </p>
-      <input id="question6" /><br />
+      <div class="literalQuestion">
+        <label>
+          Quel type de logiciel permet à tout utilisateur de l'utiliser, de
+          l'étudier, de le modifier et de le redistribuer sans restriction ?
+        </label>
+        <input id="question6" placeholder="Tapez votre réponse ici..." />
+      </div>
 
-      <p>Quel mot-outil utilise-t-on pour faire une boucle en Python ?</p>
-      <input name="question7" type="checkbox" />for<br />
-      <input name="question7" type="checkbox" />while<br />
-      <input name="question7" type="checkbox" />before<br />
+      <div class="choiceQuestion">
+        <label
+          >Quel mot-outil utilise-t-on pour faire une boucle en Python ?</label
+        >
+        <div class="checkbox">
+          <input name="question7" type="checkbox" />for
+        </div>
+        <div class="checkbox">
+          <input name="question7" type="checkbox" />while
+        </div>
+        <div class="checkbox">
+          <input name="question7" type="checkbox" />before
+        </div>
+      </div>
 
-      <p>Lesquels de ces logiciels sont des logiciels propriétaires ?</p>
-      <input name="question8" type="checkbox" />Adobe Photoshop<br />
-      <input name="question8" type="checkbox" />LibreOffice<br />
-      <input name="question8" type="checkbox" />Mozilla Firefox<br />
-      <input name="question8" type="checkbox" />Microsoft Office
+      <div class="choiceQuestion">
+        <label
+          >Lesquels de ces logiciels sont des logiciels propriétaires ?</label
+        >
+        <div class="checkbox">
+          <input name="question8" type="checkbox" />Adobe Photoshop
+        </div>
+        <div class="checkbox">
+          <input name="question8" type="checkbox" />LibreOffice
+        </div>
+        <div class="checkbox">
+          <input name="question8" type="checkbox" />Mozilla Firefox
+        </div>
+        <div class="checkbox">
+          <input name="question8" type="checkbox" />Microsoft Office
+        </div>
+      </div>
+
       <div class="buttons">
-        <button onclick="verifier()" class="submitButton">Vérifier</button>
-        <button onclick="reinitialiser()" class="resetButton">
+        <button type="button" onclick="verifier()" class="submitButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 30 30"
+          >
+            <path
+              d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 21.627 8.373 27 15 27 C 21.627 27 27 21.627 27 15 C 27 12.820623 26.409997 10.783138 25.394531 9.0214844 L 14.146484 20.267578 C 13.959484 20.454578 13.705453 20.560547 13.439453 20.560547 C 13.174453 20.560547 12.919422 20.455578 12.732422 20.267578 L 8.2792969 15.814453 C 7.8882969 15.423453 7.8882969 14.791391 8.2792969 14.400391 C 8.6702969 14.009391 9.3023594 14.009391 9.6933594 14.400391 L 13.439453 18.146484 L 24.240234 7.3457031 C 22.039234 4.6907031 18.718 3 15 3 z M 24.240234 7.3457031 C 24.671884 7.8662808 25.053743 8.4300516 25.394531 9.0195312 L 27.707031 6.7070312 C 28.098031 6.3150312 28.098031 5.6839688 27.707031 5.2929688 C 27.316031 4.9019687 26.683969 4.9019688 26.292969 5.2929688 L 24.240234 7.3457031 z"
+            ></path>
+          </svg>
+          Vérifier
+        </button>
+        <a href="./approfondissement.html" class="noDeco resetButton">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -73,8 +169,8 @@
               d="M 13 3 A 1.0001 1.0001 0 0 0 11.986328 4 L 6 4 A 1.0001 1.0001 0 1 0 6 6 L 24 6 A 1.0001 1.0001 0 1 0 24 4 L 18.013672 4 A 1.0001 1.0001 0 0 0 17 3 L 13 3 z M 6 8 L 6 24 C 6 25.105 6.895 26 8 26 L 22 26 C 23.105 26 24 25.105 24 24 L 24 8 L 6 8 z M 12 13 C 12.25575 13 12.511531 13.097469 12.707031 13.292969 L 15 15.585938 L 17.292969 13.292969 C 17.683969 12.901969 18.316031 12.901969 18.707031 13.292969 C 19.098031 13.683969 19.098031 14.316031 18.707031 14.707031 L 16.414062 17 L 18.707031 19.292969 C 19.098031 19.683969 19.098031 20.316031 18.707031 20.707031 C 18.512031 20.902031 18.256 21 18 21 C 17.744 21 17.487969 20.902031 17.292969 20.707031 L 15 18.414062 L 12.707031 20.707031 C 12.512031 20.902031 12.256 21 12 21 C 11.744 21 11.487969 20.902031 11.292969 20.707031 C 10.901969 20.316031 10.901969 19.683969 11.292969 19.292969 L 13.585938 17 L 11.292969 14.707031 C 10.901969 14.316031 10.901969 13.683969 11.292969 13.292969 C 11.488469 13.097469 11.74425 13 12 13 z"
             ></path>
           </svg>
-          Remettre à zéro
-        </button>
+          Remettre à zéro</a
+        >
       </div>
     </form>
     <br />
@@ -82,12 +178,15 @@
     <!--le bouton pour demarrer la fonction -->
 
     <!-- Actualisation des cases vides -->
-    <p id="appreciation">...</p>
-    <p id="nombre_justes">...</p>
     <script>
-      function reinitialiser() {
-        location.reload();
-      }
+      const reset = () => {
+        document.location.reload(true);
+      };
+
+      const closeButton = () => {
+        document.getElementById("end").style.transform = "translateX(100%)";
+      };
+
       function verifier() {
         // On récupère les valeurs saisies
 
@@ -104,6 +203,23 @@
         var score = 0;
         if (questionA.toLowerCase() == "ascii") {
           score += 1;
+          document.getElementById("questionA").style.borderBottomColor =
+            "#16a34a";
+          document.getElementById("questionA").style.backgroundColor =
+            "#dcfce7";
+          document.getElementById("questionA").style.boxShadow =
+            "0 0 0.5vw rgba(22, 163, 74, 40%)";
+          document.getElementById("questionA").disabled = true;
+        } else {
+          document.getElementById("questionA").value = "ASCII";
+          document.getElementById("questionA").style.borderBottomColor =
+            "#dc2626";
+          document.getElementById("questionA").style.backgroundColor =
+            "#fee2e2";
+          document.getElementById("questionA").style.boxShadow =
+            "0 0 0.5vw rgba(220, 38, 38, 40%)";
+          document.getElementById("questionA").disabled = true;
+          document.getElementById("questionA").style.color = "rgb(37, 99, 235)";
         }
         if (
           questionB[0].checked == true &&
@@ -112,9 +228,44 @@
           questionB[3].checked == true
         ) {
           score += 1;
+          questionB[0].disabled = true;
+          questionB[1].disabled = true;
+          questionB[3].disabled = true;
+          questionB[0].style.boxShadow = "0 0 0.5vw rgba(22, 163, 74, 100%)";
+          questionB[1].style.boxShadow = "0 0 0.5vw rgba(22, 163, 74, 100%)";
+          questionB[3].style.boxShadow = "0 0 0.5vw rgba(22, 163, 74, 100%)";
+        } else {
+          questionB[2].disabled = true;
+          questionB[2].style.boxShadow = "0 0 0.5vw rgba(220, 38, 38, 100%)";
+          questionB[0].disabled = true;
+          questionB[1].disabled = true;
+          questionB[3].disabled = true;
+          questionB[0].style.boxShadow = "0 0 0.5vw rgba(37, 99, 235, 100%)";
+          questionB[1].style.boxShadow = "0 0 0.5vw rgba(37, 99, 235, 100%)";
+          questionB[3].style.boxShadow = "0 0 0.5vw rgba(37, 99, 235, 100%)";
         }
-        if (questionC.toLowerCase() == "html") {
+        if (
+          questionC.toLowerCase() == "html" ||
+          questionC.toLowerCase() == "html5"
+        ) {
           score += 1;
+          document.getElementById("questionC").style.borderBottomColor =
+            "#16a34a";
+          document.getElementById("questionC").style.backgroundColor =
+            "#dcfce7";
+          document.getElementById("questionC").style.boxShadow =
+            "0 0 0.5vw rgba(22, 163, 74, 40%)";
+          document.getElementById("questionC").disabled = true;
+        } else {
+          document.getElementById("questionC").value = "HTML5 / HTML";
+          document.getElementById("questionC").style.borderBottomColor =
+            "#dc2626";
+          document.getElementById("questionC").style.backgroundColor =
+            "#fee2e2";
+          document.getElementById("questionC").style.boxShadow =
+            "0 0 0.5vw rgba(220, 38, 38, 40%)";
+          document.getElementById("questionC").disabled = true;
+          document.getElementById("questionC").style.color = "rgb(37, 99, 235)";
         }
         if (
           questionD[0].checked == true &&
@@ -123,6 +274,19 @@
           questionD[3].checked == false
         ) {
           score += 1;
+          questionD[0].disabled = true;
+          questionD[2].disabled = true;
+          questionD[0].style.boxShadow = "0 0 0.5vw rgba(22, 163, 74, 100%)";
+          questionD[2].style.boxShadow = "0 0 0.5vw rgba(22, 163, 74, 100%)";
+        } else {
+          questionD[1].disabled = true;
+          questionD[3].disabled = true;
+          questionD[1].style.boxShadow = "0 0 0.5vw rgba(220, 38, 38, 100%)";
+          questionD[3].style.boxShadow = "0 0 0.5vw rgba(220, 38, 38, 100%)";
+          questionD[0].disabled = true;
+          questionD[2].disabled = true;
+          questionD[0].style.boxShadow = "0 0 0.5vw rgba(37, 99, 235, 100%)";
+          questionD[2].style.boxShadow = "0 0 0.5vw rgba(37, 99, 235, 100%)";
         }
         if (
           question5[0].checked == false &&
@@ -131,9 +295,39 @@
           question5[3].checked == false
         ) {
           score += 1;
+          question5[1].disabled = true;
+          question5[2].disabled = true;
+          question5[1].style.boxShadow = "0 0 0.5vw rgba(22, 163, 74, 100%)";
+          question5[2].style.boxShadow = "0 0 0.5vw rgba(22, 163, 74, 100%)";
+        } else {
+          question5[0].disabled = true;
+          question5[3].disabled = true;
+          question5[0].style.boxShadow = "0 0 0.5vw rgba(220, 38, 38, 100%)";
+          question5[3].style.boxShadow = "0 0 0.5vw rgba(220, 38, 38, 100%)";
+          question5[1].disabled = true;
+          question5[2].disabled = true;
+          question5[1].style.boxShadow = "0 0 0.5vw rgba(37, 99, 235, 100%)";
+          question5[2].style.boxShadow = "0 0 0.5vw rgba(37, 99, 235, 100%)";
         }
         if (question6.toLowerCase() === "logiciel libre") {
           score += 1;
+          document.getElementById("question6").style.borderBottomColor =
+            "#16a34a";
+          document.getElementById("question6").style.backgroundColor =
+            "#dcfce7";
+          document.getElementById("question6").style.boxShadow =
+            "0 0 0.5vw rgba(22, 163, 74, 40%)";
+          document.getElementById("question6").disabled = true;
+        } else {
+          document.getElementById("question6").value = "Logiciel Libre";
+          document.getElementById("question6").style.borderBottomColor =
+            "#dc2626";
+          document.getElementById("question6").style.backgroundColor =
+            "#fee2e2";
+          document.getElementById("question6").style.boxShadow =
+            "0 0 0.5vw rgba(220, 38, 38, 40%)";
+          document.getElementById("question6").disabled = true;
+          document.getElementById("question6").style.color = "rgb(37, 99, 235)";
         }
         if (
           question7[0].checked == true &&
@@ -141,6 +335,17 @@
           question7[2].checked == false
         ) {
           score += 1;
+          question7[0].disabled = true;
+          question7[1].disabled = true;
+          question7[0].style.boxShadow = "0 0 0.5vw rgba(22, 163, 74, 100%)";
+          question7[1].style.boxShadow = "0 0 0.5vw rgba(22, 163, 74, 100%)";
+        } else {
+          question7[2].disabled = true;
+          question7[2].style.boxShadow = "0 0 0.5vw rgba(220, 38, 38, 100%)";
+          question7[0].disabled = true;
+          question7[1].disabled = true;
+          question7[0].style.boxShadow = "0 0 0.5vw rgba(37, 99, 235, 100%)";
+          question7[1].style.boxShadow = "0 0 0.5vw rgba(37, 99, 235, 100%)";
         }
         if (
           question8[0].checked == true &&
@@ -149,22 +354,44 @@
           question8[3].checked == true
         ) {
           score += 1;
+          question8[0].disabled = true;
+          question8[3].disabled = true;
+          question8[0].style.boxShadow = "0 0 0.5vw rgba(22, 163, 74, 100%)";
+          question8[3].style.boxShadow = "0 0 0.5vw rgba(22, 163, 74, 100%)";
+        } else {
+          question8[1].disabled = true;
+          question8[2].disabled = true;
+          question8[1].style.boxShadow = "0 0 0.5vw rgba(220, 38, 38, 100%)";
+          question8[2].style.boxShadow = "0 0 0.5vw rgba(220, 38, 38, 100%)";
+          question8[0].disabled = true;
+          question8[3].disabled = true;
+          question8[0].style.boxShadow = "0 0 0.5vw rgba(37, 99, 235, 100%)";
+          question8[3].style.boxShadow = "0 0 0.5vw rgba(37, 99, 235, 100%)";
         }
 
-        // On actualise l'appréciation
+        var appreciation = document.getElementById("appreciation");
+        var nombre_justes = document.getElementById("nombre_justes");
+
         if (score < 2) {
           appreciation.textContent = "Nul.";
+          appreciation.style.color = "#dc2626";
         }
         if (score > 1 && score < 5) {
-          appreciation.textContent = "tu peux mieux faire";
+          appreciation.textContent = "Tu peux mieux faire.";
+          appreciation.style.color = "#ea580c";
         }
         if (score > 4 && score < 8) {
-          appreciation.textContent = "C'est bien";
+          appreciation.textContent = "C'est bien.";
+          appreciation.style.color = "#16a34a";
         }
         if (score > 7) {
-          appreciation.textContent = "Excellent.";
+          appreciation.textContent = "Excellent !";
+          appreciation.style.color = "#2563eb";
         }
         nombre_justes.textContent = "Tu as " + score + " réponses correctes.";
+
+        document.getElementById("end").style.transform = "translateX(0)";
+        // On actualise l'appréciation
       }
     </script>
   </body>
