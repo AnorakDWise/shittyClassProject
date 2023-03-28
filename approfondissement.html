@@ -2,592 +2,169 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Quiz</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="wrapper">
-      <h1>Quiz</h1>
-      <div class="quiz-container">
-        <form name="quiz">
-          <ol>
-            <li>
-              <h3>Question 1:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q1" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q1" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q1" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 2:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q2" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q2" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q2" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 3:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q3" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q3" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q3" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 4:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q4" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q4" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q4" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 5:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q5" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q5" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q5" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 6:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q6" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q6" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q6" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 7:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q7" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q7" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q7" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 8:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q8" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q8" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q8" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 9:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q9" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q9" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q9" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 10:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q10" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q10" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q10" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 11:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q11" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q11" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q11" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 12:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q12" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q12" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q12" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 13:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q13" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q13" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q13" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 14:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q14" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q14" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q14" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 15:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q15" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q15" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q15" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 16:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q16" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q16" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q16" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 17:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q17" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q17" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q17" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 18:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q18" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q18" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q18" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 19:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q19" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q19" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q19" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <li>
-              <h3>Question 20:</h3>
-              <div>
-                <label>
-                  <input type="radio" name="q20" value="A" />
-                  Option A
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q20" value="B" />
-                  Option B
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="q20" value="C" />
-                  Option C
-                </label>
-              </div>
-            </li>
-            <!-- Repeat for questions 2-20 -->
-          </ol>
-          <div class="submit-container">
-            <input type="submit" value="Submit" />
-          </div>
-        </form>
+  <body id="quizPage">
+    <h1>Quiz de Sciences Informatiques : Niveau 1° général</h1>
+    <!-- le formulaire -->
+    <form name="quiz" class="formContainer">
+      <p>Comment s'appelle le code alphabétique relié au code binaire ?</p>
+      <input id="questionA" /><br />
+
+      <p>Quels composants sont obligatoires dans un ordinateur ?</p>
+      <input name="questionB" type="checkbox" />La RAM<br />
+      <input name="questionB" type="checkbox" />Le processeur<br />
+      <input name="questionB" type="checkbox" />Le lecteur CD<br />
+      <input name="questionB" type="checkbox" />La carte mère<br /><br />
+
+      <p>
+        Comment s'appelle le langage de codage pour coder des sites internet?
+      </p>
+      <input id="questionC" /><br />
+
+      <p>Quels composants sont obligatoires dans un ordinateur ?</p>
+      <input name="questionD" type="checkbox" />Ruby<br />
+      <input name="questionD" type="checkbox" />Diamant<br />
+      <input name="questionD" type="checkbox" />C<br />
+      <input name="questionD" type="checkbox" />C--<br />
+
+      <p>Quels sont les chemins que l'on peut utiliser dans un répertoire ?</p>
+      <input name="question5" type="checkbox" />Chemin complet<br />
+      <input name="question5" type="checkbox" />Chemin relatif<br />
+      <input name="question5" type="checkbox" />Chemin absolu<br />
+      <input name="question5" type="checkbox" />Chemin semi-relatif<br />
+
+      <p>
+        Quel type de logiciel permet à tout utilisateur de l'utiliser, de
+        l'étudier, de le modifier et de le redistribuer sans restriction ?
+      </p>
+      <input id="question6" /><br />
+
+      <p>Quel mot-outil utilise-t-on pour faire une boucle en Python ?</p>
+      <input name="question7" type="checkbox" />for<br />
+      <input name="question7" type="checkbox" />while<br />
+      <input name="question7" type="checkbox" />before<br />
+
+      <p>Lesquels de ces logiciels sont des logiciels propriétaires ?</p>
+      <input name="question8" type="checkbox" />Adobe Photoshop<br />
+      <input name="question8" type="checkbox" />LibreOffice<br />
+      <input name="question8" type="checkbox" />Mozilla Firefox<br />
+      <input name="question8" type="checkbox" />Microsoft Office
+      <div class="buttons">
+        <button onclick="verifier()" class="submitButton">Vérifier</button>
+        <button onclick="reinitialiser()" class="resetButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 30 30"
+          >
+            <path
+              d="M 13 3 A 1.0001 1.0001 0 0 0 11.986328 4 L 6 4 A 1.0001 1.0001 0 1 0 6 6 L 24 6 A 1.0001 1.0001 0 1 0 24 4 L 18.013672 4 A 1.0001 1.0001 0 0 0 17 3 L 13 3 z M 6 8 L 6 24 C 6 25.105 6.895 26 8 26 L 22 26 C 23.105 26 24 25.105 24 24 L 24 8 L 6 8 z M 12 13 C 12.25575 13 12.511531 13.097469 12.707031 13.292969 L 15 15.585938 L 17.292969 13.292969 C 17.683969 12.901969 18.316031 12.901969 18.707031 13.292969 C 19.098031 13.683969 19.098031 14.316031 18.707031 14.707031 L 16.414062 17 L 18.707031 19.292969 C 19.098031 19.683969 19.098031 20.316031 18.707031 20.707031 C 18.512031 20.902031 18.256 21 18 21 C 17.744 21 17.487969 20.902031 17.292969 20.707031 L 15 18.414062 L 12.707031 20.707031 C 12.512031 20.902031 12.256 21 12 21 C 11.744 21 11.487969 20.902031 11.292969 20.707031 C 10.901969 20.316031 10.901969 19.683969 11.292969 19.292969 L 13.585938 17 L 11.292969 14.707031 C 10.901969 14.316031 10.901969 13.683969 11.292969 13.292969 C 11.488469 13.097469 11.74425 13 12 13 z"
+            ></path>
+          </svg>
+          Remettre à zéro
+        </button>
       </div>
-    </div>
+    </form>
+    <br />
 
+    <!--le bouton pour demarrer la fonction -->
+
+    <!-- Actualisation des cases vides -->
+    <p id="appreciation">...</p>
+    <p id="nombre_justes">...</p>
     <script>
-      // Define the quiz questions and answers
-      const quizQuestions = [
-        {
-          question: "Question 1",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 2",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 3",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 4",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 5",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 6",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 7",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 8",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 9",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 10",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 11",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 12",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 13",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 14",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 15",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 16",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 17",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 18",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 19",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        {
-          question: "Question 20",
-          choices: ["Option A", "Option B", "Option C"],
-          answer: "B",
-        },
-        // Repeat for questions 2-20
-      ];
-
-      // Get the form and add an event listener to handle submissions
-      const form = document.forms.quiz;
-      form.addEventListener("submit", handleSubmit);
-
-      // Handle form submission
-      function handleSubmit(event) {
-        event.preventDefault();
-        const score = calculateScore();
-        const message = getMessage(score);
-        alert(`You scored ${score} out of ${quizQuestions.length}. ${message}`);
+      function reinitialiser() {
+        location.reload();
       }
+      function verifier() {
+        // On récupère les valeurs saisies
 
-      // Calculate the score
-      function calculateScore() {
-        let score = 0;
-        for (let i = 0; i < quizQuestions.length; i++) {
-          const question = quizQuestions[i];
-          const userAnswer = form[`q${i + 1}`].value;
-          if (userAnswer === question.answer) {
-            score++;
-          }
-        }
-        return score;
-      }
+        var questionA = document.quiz.questionA.value;
+        var questionB = document.getElementsByName("questionB");
+        var questionC = document.quiz.questionC.value;
+        var questionD = document.getElementsByName("questionD");
+        var question5 = document.getElementsByName("question5");
+        var question6 = document.quiz.question6.value;
+        var question7 = document.getElementsByName("question7");
+        var question8 = document.getElementsByName("question8");
 
-      // Get a message based on the score
-      function getMessage(score) {
-        if (score < 5) {
-          return "Score too low!";
-        } else if (score < 10) {
-          return "Not bad, but you could do better.";
-        } else if (score < 15) {
-          return "Great job!";
-        } else {
-          return "You scored well.";
+        // On gère le score en fonction des réponses
+        var score = 0;
+        if (questionA.toLowerCase() == "ascii") {
+          score += 1;
         }
+        if (
+          questionB[0].checked == true &&
+          questionB[1].checked == true &&
+          questionB[2].checked == false &&
+          questionB[3].checked == true
+        ) {
+          score += 1;
+        }
+        if (questionC.toLowerCase() == "html") {
+          score += 1;
+        }
+        if (
+          questionD[0].checked == true &&
+          questionD[1].checked == false &&
+          questionD[2].checked == true &&
+          questionD[3].checked == false
+        ) {
+          score += 1;
+        }
+        if (
+          question5[0].checked == false &&
+          question5[1].checked == true &&
+          question5[2].checked == true &&
+          question5[3].checked == false
+        ) {
+          score += 1;
+        }
+        if (question6.toLowerCase() === "logiciel libre") {
+          score += 1;
+        }
+        if (
+          question7[0].checked == true &&
+          question7[1].checked == true &&
+          question7[2].checked == false
+        ) {
+          score += 1;
+        }
+        if (
+          question8[0].checked == true &&
+          question8[1].checked == false &&
+          question8[2].checked == false &&
+          question8[3].checked == true
+        ) {
+          score += 1;
+        }
+
+        // On actualise l'appréciation
+        if (score < 2) {
+          appreciation.textContent = "Nul.";
+        }
+        if (score > 1 && score < 5) {
+          appreciation.textContent = "tu peux mieux faire";
+        }
+        if (score > 4 && score < 8) {
+          appreciation.textContent = "C'est bien";
+        }
+        if (score > 7) {
+          appreciation.textContent = "Excellent.";
+        }
+        nombre_justes.textContent = "Tu as " + score + " réponses correctes.";
       }
     </script>
   </body>
