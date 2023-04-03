@@ -79,6 +79,52 @@ body {
   transition: 200ms ease-in-out all;
 }
 
+.infoButton {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  border: none;
+  background-color: transparent;
+  width: max-content;
+  height: max-content;
+}
+
+.infoButton svg {
+  transition: all 200ms ease-in-out;
+  width: 3vw;
+}
+
+.infoButton:hover svg {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  filter: brightness(80%) drop-shadow(0 0 0.5vw rgba(46, 166, 218, 0.75));
+}
+
+.infoPanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.5vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: normal;
+  transform: translateX(-100%);
+  transition: all 800ms ease-in-out;
+  border-radius: 0 1vw 1vw 0;
+}
+
+.infoPanel p {
+  width: 50%;
+  font-size: 1vw;
+  color: #f1f5f9;
+  letter-spacing: 0.025vw;
+}
+
 h1 {
   text-align: center;
   margin-top: 0;
